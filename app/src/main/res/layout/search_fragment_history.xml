@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/general_padding_activity"
+    android:paddingRight="@dimen/general_padding_activity">
+
+    <RelativeLayout
+        android:id="@+id/search_fragment_history_rly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索历史"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/search_fragment_history_clear_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/input_close"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_fragment_history_rcy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

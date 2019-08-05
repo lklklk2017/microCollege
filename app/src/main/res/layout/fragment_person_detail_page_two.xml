@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDefaultBackGroundDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/general_padding_activity"
+            android:gravity="center_vertical"
+            android:text="基本信息"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/fragment_person_detail_page_two_name_cardv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/general_padding_activity"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <!--text-->
+                <TextView
+                    android:id="@+id/fragment_person_detail_page_two_nameTitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+
+                    android:id="@+id/fragment_person_detail_page_two_name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/fragment_person_detail_page_two_nameTitle_tv"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/fragment_person_detail_page_two_nameTitle_tv"
+                    android:hint="还没有昵称"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--line three sign-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/fragment_person_detail_page_two_sign_cardv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/general_padding_activity">
+
+                <!--text-->
+                <TextView
+                    android:id="@+id/fragment_person_detail_page_two_signTitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="签名"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+                <!--content-->
+                <TextView
+                    android:id="@+id/fragment_person_detail_page_two_sign_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:hint="还没有签名"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--line four gender-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/fragment_person_detail_page_two_gender_cardv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0.5dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/general_padding_activity">
+
+                <!--text-->
+                <TextView
+                    android:id="@+id/fragment_person_detail_page_two_genderitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+                <!--content-->
+                <TextView
+                    android:id="@+id/fragment_person_detail_page_two_gender_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:hint="未知"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/general_padding_activity"
+            android:gravity="center_vertical"
+            android:text="其他信息"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+        <!--line six place-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/fragment_person_detail_page_two_place_cardv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+
+                android:paddingLeft="@dimen/general_padding_activity">
+
+                <!--text-->
+                <TextView
+                    android:id="@+id/fragment_person_detail_page_two_placeTitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所在地"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+                <!--content-->
+                <TextView
+                    android:id="@+id/fragment_person_detail_page_two_place_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:hint="还没有填写"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--line seven college-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/fragment_person_detail_page_two_college_cardv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/general_padding_activity"
+                android:paddingTop="5dp"
+
+                android:paddingBottom="10dp">
+                <!--text-->
+                <TextView
+                    android:id="@+id/fragment_person_detail_page_two_collegeTitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学校"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/fragment_person_detail_page_two_college_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/fragment_person_detail_page_two_collegeTitle_tv"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/fragment_person_detail_page_two_collegeTitle_tv"
+                    android:hint="还没有填写"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--line seven job-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/fragment_person_detail_page_two_job_cardv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"                android:paddingLeft="@dimen/general_padding_activity"
+
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <!--text-->
+                <TextView
+                    android:id="@+id/fragment_person_detail_page_two_jobTitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="行业"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/fragment_person_detail_page_two_job_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/fragment_person_detail_page_two_jobTitle_tv"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/fragment_person_detail_page_two_jobTitle_tv"
+                    android:hint="还没有填写"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

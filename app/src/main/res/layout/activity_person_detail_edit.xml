@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDefaultBackGroundDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--line one-->
+        <cn.cuit.microcollege.widget.actionBar.CustomPublishActionBar
+            android:id="@+id/activity_person_detail_edit_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/general_actionbar_height"
+            app:cs_btn_text="保存"
+            app:cs_btn_text_enable="true"
+            app:cs_text="编辑个人信息" />
+
+        <!--line two-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/activity_person_detail_edit_bg_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_launcher" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--image-->
+                <ImageView
+                    android:id="@+id/activity_person_detail_edit_portrait_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:padding="1dp"
+                    android:src="@mipmap/ic_launcher" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <!--line three name-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/activity_person_detail_edit_name_cardv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.5dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="1dp"
+            app:contentPaddingLeft="@dimen/general_padding_activity">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <!--text-->
+                <TextView
+                    android:id="@+id/activity_person_detail_edit_nameTitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/activity_person_detail_edit_name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/activity_person_detail_edit_nameTitle_tv"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/activity_person_detail_edit_nameTitle_tv"
+                    android:background="@null"
+                    android:text="Rod Eden"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_person_detail_edit_name_et"
+                    android:layout_alignLeft="@id/activity_person_detail_edit_name_et"
+                    android:layout_marginTop="10dp"
+                    android:hint="4-24个字符 好的昵称可以让你获得更多关注"
+                    android:textSize="10sp" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--line three sign-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/activity_person_detail_edit_sign_cardv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="0.5dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="1dp"
+            app:contentPaddingLeft="@dimen/general_padding_activity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--text-->
+                <TextView
+                    android:id="@+id/activity_person_detail_edit_signTitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="签名"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+                <!--content-->
+                <EditText
+                    android:id="@+id/activity_person_detail_edit_sign_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@null"
+                    android:hint="介绍一下自己"
+                    android:text="这是我的签名"
+                    android:textColor="@color/colorDefaultHint"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--line four gender-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/activity_person_detail_edit_gender_cardv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0.5dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="1dp"
+            app:contentPaddingLeft="@dimen/general_padding_activity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--text-->
+                <TextView
+                    android:id="@+id/activity_person_detail_edit_genderitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+                <!--content-->
+                <TextView
+                    android:id="@+id/activity_person_detail_edit_gender_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@null"
+                    android:text="男"
+                    android:textColor="@color/colorDefaultHint"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--line five birthday-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/activity_person_detail_edit_birth_cardv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.5dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="1dp"
+            app:contentPaddingLeft="@dimen/general_padding_activity">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <!--text-->
+                <TextView
+                    android:id="@+id/activity_person_detail_edit_birthTitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生日"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/activity_person_detail_edit_birth_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/activity_person_detail_edit_birthTitle_tv"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/activity_person_detail_edit_birthTitle_tv"
+                    android:background="@null"
+                    android:text="1995-4-28"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_person_detail_edit_birth_tv"
+                    android:layout_alignLeft="@id/activity_person_detail_edit_birth_tv"
+                    android:layout_marginTop="10dp"
+                    android:hint="正确填写生日信息,可以收获惊喜哦"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--line six place-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/activity_person_detail_edit_place_cardv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="0.5dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="1dp"
+            app:contentPaddingLeft="@dimen/general_padding_activity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--text-->
+                <TextView
+                    android:id="@+id/activity_person_detail_edit_placeTitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所在地"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+                <!--content-->
+                <EditText
+                    android:id="@+id/activity_person_detail_edit_place_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@null"
+                    android:hint="你在哪儿"
+                    android:textColor="@color/colorDefaultHint"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--line seven college-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/activity_person_detail_edit_college_cardv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0.5dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="1dp"
+            app:contentPaddingLeft="@dimen/general_padding_activity">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp">
+                <!--text-->
+                <TextView
+                    android:id="@+id/activity_person_detail_edit_collegeTitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学校"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/activity_person_detail_edit_college_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/activity_person_detail_edit_collegeTitle_tv"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/activity_person_detail_edit_collegeTitle_tv"
+                    android:background="@null"
+                    android:hint="所在学校"
+                    android:text="成都信息工程大学"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_person_detail_edit_college_et"
+                    android:layout_alignLeft="@id/activity_person_detail_edit_college_et"
+                    android:layout_marginTop="10dp"
+                    android:hint="一起发现校友吧"
+                    android:textSize="10sp" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--line seven job-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/activity_person_detail_edit_job_cardv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.5dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="1dp"
+            app:contentPaddingLeft="@dimen/general_padding_activity">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <!--text-->
+                <TextView
+                    android:id="@+id/activity_person_detail_edit_jobTitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="行业"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/activity_person_detail_edit_job_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/activity_person_detail_edit_jobTitle_tv"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/activity_person_detail_edit_jobTitle_tv"
+                    android:background="@null"
+                    android:text="学生"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_person_detail_edit_job_et"
+                    android:layout_alignLeft="@id/activity_person_detail_edit_job_et"
+                    android:layout_marginTop="10dp"
+                    android:hint="为你寻找共同兴趣领域的人"
+                    android:textSize="10sp" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

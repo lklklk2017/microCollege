@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.cuit.microcollege.widget.actionBar.CustomDefaultCenterActionBar
+        android:id="@+id/explore_fragment_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_actionbar_height"
+        app:cs_text="聊天" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/explore_fragment_swip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorDefaultBackGroundDark">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/explore_fragment_rcy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

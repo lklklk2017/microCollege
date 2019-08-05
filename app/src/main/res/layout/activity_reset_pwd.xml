@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/general_padding_activity"
+    android:paddingRight="@dimen/general_padding_activity">
+
+    <!--顶部-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/actionbar_back" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:text="输入新密码"
+        android:textSize="20sp" />
+
+
+    <!--password-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/regist_telinput_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        >
+
+        <EditText
+            android:id="@+id/reset_password_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            />
+
+        <ImageView
+            android:id="@+id/reset_eye_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/eye_close"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/reset_finish_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_submit_bg"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@android:color/white" />
+</LinearLayout>

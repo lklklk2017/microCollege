@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".activity.HomeActivity">
+
+    <TextView
+        android:id="@+id/nav_msg_count"
+        android:layout_width="17dp"
+        android:layout_height="15dp"
+        android:background="@drawable/home_nav_msg_red_bg"
+        android:gravity="center"
+        android:text="11"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="-20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+</RelativeLayout>

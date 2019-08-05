@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!--tab layout-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/search_detail_fragment_tabLyt"
+        style="@style/detailTablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_tablayout_height"
+        />
+
+    <!--fragment-->
+    <cn.cuit.microcollege.widget.CustomViewPager
+        android:id="@+id/search_detail_fragment_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</LinearLayout>

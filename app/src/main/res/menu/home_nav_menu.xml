@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--home-->
+    <item
+        android:id="@+id/home_nav_item_home"
+        android:icon="@drawable/selector_nav_icon_home"
+        android:title="@string/home_nav_title_home" />
+
+    <!--dyanmic-->
+    <item
+        android:id="@+id/home_nav_item_dynamic"
+        android:icon="@drawable/selector_nav_icon_explore"
+        android:title="@string/home_nav_title_dynamic" />
+
+    <!--add-->
+    <item
+        android:id="@+id/home_nav_item_add"
+        android:icon="@drawable/home_add"
+        android:title="@string/home_nav_title_add" />
+
+    <!--&lt;!&ndash;explore&ndash;&gt;-->
+    <!--<item-->
+        <!--android:id="@+id/home_nav_item_explore"-->
+        <!--android:icon="@drawable/selector_nav_icon_dynamic"-->
+        <!--android:title="@string/home_nav_title_explore" />-->
+
+    <!--me-->
+    <item
+        android:id="@+id/home_nav_item_me"
+        android:icon="@drawable/selector_nav_icon_me"
+        android:title="@string/home_nav_title_me" />
+</menu>

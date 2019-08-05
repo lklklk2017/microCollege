@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg_cor5">
+
+
+    <cn.cuit.microcollege.widget.loadWidget.LoadingView
+        android:id="@+id/loadView"
+        android:layout_width="120dp"
+        android:layout_height="130dp" />
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wel_01_final" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:paddingLeft="@dimen/general_padding_activity"
+        android:paddingTop="20dp"
+        android:paddingRight="@dimen/general_padding_activity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="乐于微笑 享与微校"
+            android:textColor="@color/colorDefaultHint" />
+
+        <ImageView
+            android:id="@+id/wel_logo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/logo_temp" />
+
+        <cn.cuit.microcollege.widget.CustomCountDown
+            android:id="@+id/wel_count_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wel_logo"
+            android:layout_centerInParent="true"
+            android:text="Copyright©2018-2019 microCollege"
+            android:textSize="8sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

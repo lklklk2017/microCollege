@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="circleColor" format="color" />
+    <attr name="circleWidth" format="dimension" />
+    <attr name="cs_text" format="string" />
+    <attr name="cs_btn_text" format="string" />
+    <attr name="cs_btn_text_enable" format="boolean" />
+    <attr name="cs_hint" format="string" />
+    <attr name="cs_color" format="color" />
+    <attr name="cs_img" format="reference" />
+
+    <declare-styleable name="CustomLoading">
+        <attr name="circleColor" />
+        <attr name="circleWidth" />
+        <attr name="arc_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomCountDown">
+        <attr name="circleColor" />
+        <attr name="circleWidth" />
+        <attr name="second" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTelInputView">
+        <!--电话号内容-->
+        <attr name="cs_text" />
+    </declare-styleable>
+
+    <!--自定义控件通用属性-->
+    <declare-styleable name="CustomSearchBar">
+        <!--图片内容-->
+        <attr name="cs_img" />
+        <!--文字内容-->
+        <attr name="cs_hint" />
+    </declare-styleable>
+
+    <!--默认action bar 样式-->
+    <declare-styleable name="CustomDefaultActionBar">
+        <!--文字内容-->
+        <attr name="cs_text" />
+        <!--如果有右边的文字按钮-->
+        <attr name="cs_btn_text" />
+        <!--一般为左边的图片资源-->
+        <attr name="cs_img" />
+        <!--一般为btn的可用性-->
+        <attr name="cs_btn_text_enable" />
+    </declare-styleable>
+
+    <!--动画加载-->
+    <declare-styleable name="LoadingView">
+        <attr name="loadingText" format="string" />
+        <attr name="loadingTextAppearance" format="reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDefaultBackGroundDark"
+    android:orientation="vertical">
+
+    <!--line 1-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_actionbar_height"
+        android:background="@color/colorPrimaryDarkMain"
+        android:gravity="center_vertical">
+
+        <!--setting-ImageView-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:src="@mipmap/ic_launcher"-->
+        <!--android:visibility="gone" />-->
+    </RelativeLayout>
+
+    <!--line 2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/circle_half"
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/me_fragment_baseInfo_cardv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <!--portrait-->
+                <ImageView
+                    android:id="@+id/me_fragment_portrait_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/circle_shape"
+                    android:padding="10dp"
+                    android:src="@drawable/no_result" />
+
+                <!--name-->
+                <TextView
+                    android:id="@+id/me_fragment_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/me_fragment_portrait_img"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/me_fragment_portrait_img"
+                    android:text="Lacker"
+                    android:textSize="18sp" />
+                <!--img-->
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignTop="@id/me_fragment_name_tv"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/me_fragment_name_tv"
+                    android:src="@drawable/next" />
+
+                <!--image sign-->
+                <ImageView
+                    android:id="@+id/me_fragment_sign_img"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/me_fragment_name_tv"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/me_fragment_portrait_img"
+                    android:src="@drawable/sign" />
+                <!--sign-->
+                <TextView
+                    android:id="@+id/me_fragment_sign_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/me_fragment_sign_img"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/me_fragment_sign_img"
+                    android:maxWidth="20dp"
+                    android:text="这是签名" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <!--my circle-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/me_fragment_item_one_cardv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0.5dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+
+        app:cardCornerRadius="0dp"
+        app:cardElevation="1dp"
+        app:contentPaddingLeft="@dimen/general_padding_activity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--img-->
+            <ImageView
+                android:id="@+id/me_fragment_item_one_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/friends_circle" />
+
+            <!--text-->
+            <TextView
+                android:id="@+id/me_fragment_item_one_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="我的圈子"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--my notify-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/me_fragment_item_two_cardv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0.5dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="1dp"
+
+        app:contentPaddingLeft="@dimen/general_padding_activity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--img-->
+            <ImageView
+                android:id="@+id/me_fragment_item_two_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/feedback" />
+
+            <!--text-->
+            <TextView
+                android:id="@+id/me_fragment_item_two_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="我的反馈"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--three - about MicroCollege-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/me_fragment_item_three_cardv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0.5dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+
+        app:cardCornerRadius="0dp"
+        app:cardElevation="1dp"
+        app:contentPaddingLeft="@dimen/general_padding_activity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--img-->
+            <ImageView
+                android:id="@+id/me_fragment_item_three_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/about" />
+
+            <!--text-->
+            <TextView
+                android:id="@+id/me_fragment_item_three_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="关于微校"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--four - clear-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/me_fragment_item_four_cardv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0.5dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+
+        app:cardCornerRadius="0dp"
+        app:cardElevation="1dp"
+        app:contentPaddingLeft="@dimen/general_padding_activity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--img-->
+            <ImageView
+                android:id="@+id/me_fragment_item_four_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/clean" />
+
+            <!--text-->
+            <TextView
+                android:id="@+id/me_fragment_item_four_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="清除缓存"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--five - exit-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/me_fragment_item_five_cardv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0.5dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="1dp"
+        app:contentPaddingLeft="@dimen/general_padding_activity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--img-->
+            <ImageView
+                android:id="@+id/me_fragment_item_five_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/exit" />
+
+            <!--text-->
+            <TextView
+                android:id="@+id/me_fragment_item_five_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="退出登录"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

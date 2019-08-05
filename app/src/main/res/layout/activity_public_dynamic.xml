@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.cuit.microcollege.widget.actionBar.CustomPublishActionBar
+        android:id="@+id/activity_publish_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_actionbar_height"
+        app:cs_btn_text_enable="false"
+        app:cs_text="@string/public_title" />
+
+    <!--android:background="@color/colorDefaultBackGroundDark"-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/general_padding_activity"
+        android:paddingRight="@dimen/general_padding_activity"
+        android:scrollbars="none">
+
+        <!--content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--publish content-->
+            <EditText
+                android:id="@+id/activity_publish_publish_content_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:hint="分享就是快乐..." />
+
+            <!--imageCollector-->
+            <LinearLayout
+                android:id="@+id/activity_publish_imagesWrapper_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/activity_publish_imagesContent_rcy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--tags-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--circle-->
+                <LinearLayout
+                    android:id="@+id/activity_publish_circleTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/publish_btn_disable"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="3dp">
+
+                    <ImageView
+                        android:id="@+id/activity_publish_circleImg_img"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/circle_topic_white" />
+
+                    <TextView
+                        android:id="@+id/activity_publish_circle_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="圈子名称"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--location-->
+                <LinearLayout
+                    android:id="@+id/activity_publish_locationTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/publish_btn_disable"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="3dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/activity_publish_locationImg_img"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/location_white" />
+
+                    <TextView
+                        android:id="@+id/activity_publish_location_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="位置名称"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="100dp"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/dialog_sel1_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/dialog_bg"
+        android:gravity="center"
+        android:text="项目一"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/dialog_sel2_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/dialog_bg"
+        android:gravity="center"
+        android:text="项目二"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

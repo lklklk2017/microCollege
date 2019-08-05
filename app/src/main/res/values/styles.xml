@@ -1,0 +1,153 @@
+<resources>
+
+    <!-- Base application theme.  Theme.AppCompat.Light.NoActionBar-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryMain</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkMain</item>
+        <item name="colorAccent">@color/colorAccentMain</item>
+
+    </style>
+
+    <style name="CustomDialogStyle" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--dectorView 中的title 如果为true  则会去除title  留出更多的空间-->
+        <item name="android:windowNoTitle">true</item>
+        <!--设置dialog  true 代表悬浮模式，window大小和实际布局相关  如果false window全屏-->
+        <item name="android:windowIsFloating">true</item>
+        <!--背景变暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+    <!--HomeActivity-->
+    <style name="HomeActivityAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryMain</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkMain</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <!--FeedbackActivity-->
+    <style name="FeedbackActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@android:color/white</item>
+        <item name="colorAccent">@color/colorPrimaryDarkMain</item>
+    </style>
+
+    <!--OtherDefaultWhiteBackGround-->
+    <style name="OtherDefaultWhiteBackGroundAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@android:color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--chat activity-->
+    <style name="ChatActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@android:color/white</item>
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+
+
+    <!--WelcomePage-->
+    <style name="WelcomePageStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="loginAndRegist" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorDefaultBackGround</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <!--detail-->
+    <style name="detailDefault" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorDefaultwhite</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <!--detail circle -->
+    <style name="circleDetailTheme" parent="AppTheme">
+        <item name="colorPrimary">@android:color/white</item>
+        <!--状态栏背景颜色-->
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:colorBackground">@android:color/black</item>
+    </style>
+
+    <!--home_fragment_toolbar-->
+    <!--没有初始边距-->
+    <style name="defultToolBar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+    <!--tool bar- circel detail -text appearance-->
+    <style name="circleDetailToolBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <!--tool bar- circel detail -popup theme-->
+    <style name="circleToolBarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Light"></style>
+
+    <!--home_fragment_tablayout-->
+    <style name="defaultTablayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabBackground">@android:color/white</item>
+        <item name="tabIndicatorColor">@color/colorPrimaryDarkMain</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabSelectedTextColor">@android:color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorDefaultHint</item>
+    </style>
+
+    <!--detail_fragment_tablayout-->
+    <style name="detailTablayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabBackground">@color/colorDefaultwhite</item>
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabSelectedTextColor">@android:color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorDefaultHint</item>
+    </style>
+
+    <!--dynamic_fragment_tablayout-->
+    <style name="dynamicTablayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabBackground">@android:color/white</item>
+        <item name="tabIndicatorColor">@color/colorPrimaryDarkMain</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabSelectedTextColor">@android:color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorDefaultHint</item>
+    </style>
+
+    <!--cricle detail -  tablayout-->
+    <style name="circleDetailTablayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabBackground">@color/colorDefaultwhite</item>
+        <item name="tabIndicatorColor">@android:color/black</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabSelectedTextColor">@android:color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorDefaultHint</item>
+    </style>
+
+    <!--动态加载框(extra)-->
+    <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 屏幕背景是否变暗 -->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+</resources>

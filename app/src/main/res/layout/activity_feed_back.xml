@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.cuit.microcollege.widget.actionBar.CustomDefaultActionBar
+        android:id="@+id/feedback_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_actionbar_height"
+        app:cs_text="@string/feedback_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--line one-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/general_padding_activity"
+            android:paddingRight="@dimen/general_padding_activity">
+
+            <RadioGroup
+                android:id="@+id/feedback_rgp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <!--one-->
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/feedback_item_one_radioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="建议"
+                    android:textColor="@color/colorDefaultHint" />
+
+                <RadioButton
+                    android:id="@+id/feedback_item_two_radioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="故障"
+                    android:textColor="@color/colorDefaultHint" />
+
+                <RadioButton
+                    android:id="@+id/feedback_item_three_radioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="账号问题"
+                    android:textColor="@color/colorDefaultHint" />
+
+                <RadioButton
+                    android:id="@+id/feedback_item_four_radioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="其他"
+                    android:textColor="@color/colorDefaultHint" />
+
+            </RadioGroup>
+            <!--line two content-->
+            <EditText
+                android:id="@+id/feedback_content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/feedback_bg_cor10_light_gray"
+                android:gravity="start"
+                android:hint="请输入你的意见或建议(字数1000字以内)"
+                android:minHeight="200dp"
+                android:padding="10dp"
+                android:textSize="12sp" />
+
+            <!--line three submit button-->
+            <TextView
+                android:id="@+id/feedback_submit_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/feedback_submit_bg_cor5_yellow"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="提交"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

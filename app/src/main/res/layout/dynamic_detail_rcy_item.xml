@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:elevation="1dp"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="0dp">
+
+    <!--item-->
+    <RelativeLayout
+        android:id="@+id/dynamic_detail_comment_item_rlt"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/general_padding_activity"
+        android:paddingRight="@dimen/general_padding_activity">
+
+        <!--image-->
+        <ImageView
+            android:id="@+id/dynamic_detail_comment_item_protrait"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher" />
+        <!--name-->
+
+        <TextView
+            android:id="@+id/dynamic_detail_comment_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/dynamic_detail_comment_item_protrait"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="即刻反馈助手"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <!--content-->
+        <TextView
+            android:id="@+id/dynamic_detail_comment_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dynamic_detail_comment_item_name"
+            android:layout_alignLeft="@id/dynamic_detail_comment_item_name"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/dynamic_detail_comment_item_protrait"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="门神"
+            android:textColor="@color/colorDefaultHint"
+            android:textSize="15sp" />
+
+        <!--date-->
+        <TextView
+            android:id="@+id/dynamic_detail_comment_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="05/03 07:43"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

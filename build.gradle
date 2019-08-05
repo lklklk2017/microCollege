@@ -1,0 +1,32 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url "http://mvn.mob.com/android"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:9.0.0-rc2'
+//        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+        classpath 'com.mob.sdk:MobSDK:+'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+//        google()
+        jcenter()
+        mavenCentral()
+//        jcenter{url "http://jcenter.bintray.com/"}
+        maven { url "https://maven.google.com" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

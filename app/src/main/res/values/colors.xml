@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--main-->
+    <color name="colorPrimaryMain">#0E0D0D</color>
+    <color name="colorPrimaryDarkMain">#FFE311</color>
+    <color name="colorAccentMain">#FAFAFA</color>
+
+    <!--default-->
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorLightPrimary">#80D4F9</color>
+    <color name="colorDefaultBackGround">#FAFAFA</color>
+    <color name="colorDefaultBackGroundDark">#EFF3F6</color>
+    <color name="colorDefaultforwardGround">#ffffff</color>
+    <color name="colorDefaultHint">#989B9C</color>
+    <color name="colorDefaultwhite">#ffffff</color>
+    <color name="light_gray">#ddd</color>
+    <color name="colorCircleTagDefaultHint">#D0D3D6</color>
+
+
+    <!--通知栏颜色-->
+    <color name="colorPrimaryDark">#FFE311</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="regist_input_border_color">#72616161</color>
+    <color name="actionShadow">#FFF0F0F0</color>
+
+    <!--加载动画(extra)-->
+    <color name="triangle">#aa72d572</color>
+    <color name="circle">#aa738ffe</color>
+    <color name="rect">#aae84e40</color>
+    <color name="view_bg">#00000000</color>
+    <color name="shadow">#25808080</color>
+    <color name="dialog_bg">#f5f5f5</color>
+
+
+</resources>

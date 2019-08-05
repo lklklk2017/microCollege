@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingTop="5dp"
+    android:paddingRight="@dimen/general_padding_activity">
+
+    <!--time-->
+    <TextView
+        android:id="@+id/chat_content_list_right_img_only_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="04/28: 23:43" />
+
+    <!--content-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--img-->
+        <ImageView
+            android:id="@+id/chat_content_list_right_img_only_portrait"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/chat_content_list_right_img_only_img"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/chat_content_list_right_img_only_portrait" />
+
+    </RelativeLayout>
+</LinearLayout>

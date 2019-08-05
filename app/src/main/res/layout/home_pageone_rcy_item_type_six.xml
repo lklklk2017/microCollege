@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/general_padding_activity"
+        android:paddingTop="5dp"
+        android:paddingRight="@dimen/general_padding_activity"
+        android:paddingBottom="10dp">
+
+        <!--line one base-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--img-->
+            <ImageView
+                android:id="@+id/home_pageOne_rcyItem_portrait_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/logo_temp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/home_pageOne_rcyItem_portrait_img"
+                android:orientation="vertical">
+                <!--name-->
+                <TextView
+                    android:id="@+id/home_pageOne_rcyItem_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/home_pageOne_rcyItem_portrait_img"
+                    android:text="@string/app_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+                <!--date-->
+                <TextView
+                    android:id="@+id/home_pageOne_rcyItem_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/home_pageOne_rcyItem_name_tv"
+                    android:layout_toRightOf="@id/home_pageOne_rcyItem_portrait_img"
+                    android:text="@string/app_name"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!--line two content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <!--text-->
+            <TextView
+                android:id="@+id/home_pageOne_rcyItem_content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="8"
+                android:text="动态文字内容"
+                android:textColor="@android:color/black"
+                android:textSize="13sp" />
+            <!--image type-one-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/home_pageOne_rcyItem_content_img_one"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/logo_temp" />
+
+                <ImageView
+                    android:id="@+id/home_pageOne_rcyItem_content_img_two"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/logo_temp" />
+
+                <ImageView
+                    android:id="@+id/home_pageOne_rcyItem_content_img_three"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/logo_temp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/home_pageOne_rcyItem_content_img_four"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/logo_temp" />
+
+                <ImageView
+                    android:id="@+id/home_pageOne_rcyItem_content_img_five"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/logo_temp" />
+
+                <ImageView
+                    android:id="@+id/home_pageOne_rcyItem_content_img_six"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/logo_temp" />
+            </LinearLayout>
+
+            <!--circle-->
+            <LinearLayout
+                android:id="@+id/home_pageOne_rcyItem_circleTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/publish_btn_disable_light"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingTop="3dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp">
+
+                <ImageView
+                    android:id="@+id/home_pageOne_rcyItem_circleTag_img"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/circle_topic_blue" />
+
+                <TextView
+                    android:id="@+id/home_pageOne_rcyItem_circleTag_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="圈子名称"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--line three foot-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--like-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/rcyItem_like_img"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/like_before" />
+
+                <TextView
+                    android:id="@+id/rcyItem_like_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <!--comment-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="80dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/rcyItem_comment_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/message" />
+
+                <TextView
+                    android:id="@+id/rcyItem_comment_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>

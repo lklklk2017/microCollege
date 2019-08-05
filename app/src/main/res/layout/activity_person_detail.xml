@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_person_detail_cooLyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.about.PersonDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/activity_person_detail_appBarLyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/regist_input_border_color"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/activity_person_detail_collapseToolBarLyt"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@android:color/black"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed|enterAlways">
+
+            <!--background-->
+            <ImageView
+                android:id="@+id/activity_person_detail_bg_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:src="@drawable/no_result"
+                app:layout_collapseParallaxMultiplier="0.7" />
+
+            <!--content-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical"
+                android:paddingRight="10dp">
+
+                <!--action bar-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/general_actionbar_height"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp">
+                    <!--back-->
+                    <ImageView
+                        android:id="@+id/activity_person_detail_back"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_back_white" />
+                </LinearLayout>
+
+                <!--first-line-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/activity_person_detail_portrait_img"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/activity_person_detail_username_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/activity_person_detail_portrait_img"
+                        android:layout_marginLeft="10dp"
+                        android:text="username"
+                        android:textColor="@color/actionShadow"
+                        android:textSize="17sp" />
+                    <!--edit-->
+                    <LinearLayout
+                        android:id="@+id/activity_person_detail_edit_lyt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/person_detail_cor50_trans_bor1_white_bg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp">
+                        <!--image-->
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/edit" />
+                        <!--text-->
+                        <TextView
+                            android:id="@+id/activity_person_detail_edit_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:text="编辑"
+                            android:textColor="@android:color/white"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <!--second line-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                    <!--job-->
+                    <LinearLayout
+                        android:id="@+id/activity_person_detail_job_tag_lyt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/person_detail_cor50_trans_lightgray__bg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="2dp">
+                        <!--image-->
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/job" />
+                        <!--text-->
+                        <TextView
+                            android:id="@+id/activity_person_detail_job_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dp"
+                            android:text="职业"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <!--gender-->
+                    <LinearLayout
+                        android:id="@+id/activity_person_detail_gender_tag_lyt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/person_detail_cor50_trans_lightgray__bg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="2dp">
+                        <!--image-->
+                        <ImageView
+                            android:id="@+id/activity_person_detail_gender_img"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/man" />
+                    </LinearLayout>
+
+                    <!--native place-->
+                    <LinearLayout
+                        android:id="@+id/activity_person_detail_place_tag_lyt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/person_detail_cor50_trans_lightgray__bg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="2dp">
+                        <!--image-->
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/native_place" />
+                        <!--text-->
+                        <TextView
+                            android:id="@+id/activity_person_detail_place_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dp"
+                            android:text="籍贯"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!--college-->
+                    <LinearLayout
+                        android:id="@+id/activity_person_detail_college_tag_lyt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/person_detail_cor50_trans_lightgray__bg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="2dp">
+                        <!--image-->
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/college" />
+                        <!--text-->
+                        <TextView
+                            android:id="@+id/activity_person_detail_college_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dp"
+                            android:text="学校"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--count-->
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="100dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:weightSum="3">
+
+                    <!--item one-->
+                    <LinearLayout
+                        android:id="@+id/activity_person_detail_circleCreatedCount_lyt"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <!--count-->
+                        <TextView
+                            android:id="@+id/activity_person_detail_circleCreatedCount_text_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <!--count-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="创建的圈子"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!--item two-->
+                    <LinearLayout
+                        android:id="@+id/activity_person_detail_circleJoinedCount_lyt"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <!--count-->
+                        <TextView
+                            android:id="@+id/activity_person_detail_circleJoinedCount_text_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <!--count-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="加入的圈子"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!--item three-->
+                    <LinearLayout
+                        android:id="@+id/activity_person_detail_frendsCount_lyt"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <!--count-->
+                        <TextView
+                            android:id="@+id/activity_person_detail_frendsCount_text_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@android:color/white"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <!--count-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的动态"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <!--tablayout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tablayout_bg_cricle_detail"
+            android:paddingLeft="@dimen/general_padding_activity">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/activity_person_detail_tabLyt"
+                style="@style/circleDetailTablayout"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/detail_tablayout_height"
+                android:theme="@style/circleDetailTheme"
+                app:popupTheme="@style/circleToolBarPopupTheme" />
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <!--scroll view-->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/activity_person_detail_nsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorDefaultBackGroundDark"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <cn.cuit.microcollege.widget.CustomViewPager
+            android:id="@+id/activity_person_detail_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

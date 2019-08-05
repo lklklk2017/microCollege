@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.cuit.microcollege.widget.actionBar.CustomDefaultActionBar
+        android:id="@+id/agreement_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_actionbar_height"
+        app:cs_text="用户协议"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorDefaultBackGround"
+        android:paddingLeft="@dimen/general_padding_activity"
+        android:paddingRight="@dimen/general_padding_activity">
+
+        <TextView
+            android:id="@+id/agreement_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/agreement" />
+    </ScrollView>
+</LinearLayout>

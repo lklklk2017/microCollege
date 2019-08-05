@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.cuit.microcollege.widget.actionBar.CustomDefaultActionBar
+        android:id="@+id/comment_detail_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_actionbar_height"
+        app:cs_text="评论详情" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorDefaultBackGroundDark"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="3dp">
+
+            <LinearLayout
+                android:id="@+id/comment_detail_content_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/general_padding_activity"
+                android:paddingTop="5dp"
+                android:paddingRight="@dimen/general_padding_activity"
+                android:paddingBottom="10dp">
+
+                <!--line one base-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--img-->
+                    <ImageView
+                        android:id="@+id/comment_detail_portrait_img"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/logo_temp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/comment_detail_portrait_img"
+                        android:orientation="vertical">
+                        <!--name-->
+                        <TextView
+                            android:id="@+id/comment_detail_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/comment_detail_portrait_img"
+                            android:text="@string/app_name"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+                        <!--date-->
+                        <TextView
+                            android:id="@+id/comment_detail_date_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/comment_detail_name_tv"
+                            android:layout_toRightOf="@id/comment_detail_portrait_img"
+                            android:text="@string/app_name"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <!--line two content-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+                    <!--text-->
+                    <TextView
+                        android:id="@+id/comment_detail_main_content_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="8"
+                        android:text="动态文字内容"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+                    <!--circle-->
+                </LinearLayout>
+
+                line three foot
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="end|center_vertical"
+                    android:orientation="horizontal">
+                    <!--like-->
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/rcyItem_like_img"-->
+                    <!--android:layout_width="15dp"-->
+                    <!--android:layout_height="15dp"-->
+                    <!--android:src="@drawable/like_before" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/rcyItem_like_count_tv"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="0"-->
+                    <!--android:textSize="15sp" />-->
+
+                    <!--</LinearLayout>-->
+                    <!--comment-->
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="80dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/rcyItem_comment_img"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/message" />
+
+                        <TextView
+                            android:id="@+id/rcyItem_comment_count_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/general_padding_activity"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="相关评论"
+                android:textSize="15sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/comment_detail_comment_rcy"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!--no result-->
+            <LinearLayout
+                android:id="@+id/comment_detail_no_result"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/no_result"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="没有评论"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+    <!--input-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="3dp"
+        app:contentPaddingLeft="@dimen/general_padding_activity"
+        app:contentPaddingRight="@dimen/general_padding_activity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <EditText
+                android:id="@+id/comment_detail_comment_content_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/person_detail_cor15_trans_lightgray__bg"
+                android:maxLines="5"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textColor="@android:color/white"
+                android:hint="友好发言 共建和谐"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/comment_detail_comment_send_tv"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/selector_publish_bg"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="发送"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

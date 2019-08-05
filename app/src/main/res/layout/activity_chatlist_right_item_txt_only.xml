@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingTop="5dp"
+    android:paddingRight="@dimen/general_padding_activity">
+
+    <!--time-->
+    <TextView
+        android:id="@+id/chat_content_list_right_text_only_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="04/28: 23:43" />
+
+    <!--content-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--img-->
+        <ImageView
+            android:id="@+id/chat_content_list_right_text_only_portrait"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/chat_content_list_right_text_only_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/chat_content_list_right_text_only_portrait"
+            android:background="@drawable/chatlist_content_cor20_blue"
+            android:gravity="start"
+            android:padding="10dp"
+            android:text="你好"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

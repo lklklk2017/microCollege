@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.cuit.microcollege">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo_temp"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.CommentDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OtherDefaultWhiteBackGroundAppTheme"></activity>
+        <activity
+            android:name=".activity.DynamicDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OtherDefaultWhiteBackGroundAppTheme"></activity>
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OtherDefaultWhiteBackGroundAppTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.NewDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OtherDefaultWhiteBackGroundAppTheme" />
+        <activity
+            android:name=".activity.ChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ChatActivityTheme" />
+        <activity
+            android:name=".activity.PersonDetailEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OtherDefaultWhiteBackGroundAppTheme"></activity>
+        <activity
+            android:name=".activity.about.PersonDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/circleDetailTheme"></activity>
+        <activity
+            android:name=".activity.about.AgreementActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OtherDefaultWhiteBackGroundAppTheme"></activity>
+        <activity
+            android:name=".activity.about.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OtherDefaultWhiteBackGroundAppTheme" />
+        <activity
+            android:name=".activity.FeedBackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FeedbackActivityTheme" />
+        <activity
+            android:name=".activity.PublishDynamicActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/detailDefault"></activity>
+        <activity
+            android:name=".activity.CircleDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/circleDetailTheme"></activity>
+        <activity
+            android:name=".activity.MyCircleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/detailDefault" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/detailDefault"></activity>
+        <activity
+            android:name=".activity.ResetPwdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/loginAndRegist" />
+        <activity
+            android:name=".activity.ForgetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/loginAndRegist"></activity>
+        <activity
+            android:name=".activity.RegistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/loginAndRegist" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/loginAndRegist"></activity>
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityAppTheme"></activity>
+
+        <!-- 全局屏幕适配使用参数：宽、高 -->
+        <activity android:name=".test.TestActivity"></activity>
+
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640" />
+    </application>
+
+</manifest>

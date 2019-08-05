@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/regist_telinput_bg"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/custom_telinput_text_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/regist_telinput_tv_bg"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:text="+86"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/custom_telinput_telContent_et"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/custom_telinput_text_tv"
+        android:background="@null"
+        android:hint="请输入手机号"
+        android:inputType="number"
+        android:textSize="15sp"
+    android:paddingLeft="15dp" />
+
+    <ImageView
+        android:id="@+id/custom_clear_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/input_close"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>
